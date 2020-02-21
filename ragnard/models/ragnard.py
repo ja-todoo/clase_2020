@@ -10,7 +10,7 @@ class ragnard(models.Model):
      Nombre = fields.Char()
      Cedula= fields.Integer()
      Años = fields.Float(compute="_value_pc", store=True)
-     memo = fields.Text()s
+     memo = fields.Text()
 #
 #     @api.depends('value')
 #     def _value_pc(self):
