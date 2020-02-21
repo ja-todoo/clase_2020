@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="ragnard.list">
+      <field name="name">ragnard list</field>
+      <field name="model">ragnard.ragnard</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="ragnard.action_window">
+      <field name="name">ragnard window</field>
+      <field name="res_model">ragnard.ragnard</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="ragnard.action_server">
+      <field name="name">ragnard server</field>
+      <field name="model_id" ref="model_ragnard_ragnard"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="ragnard" id="ragnard.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="ragnard.menu_1" parent="ragnard.menu_root"/>
+    <menuitem name="Menu 2" id="ragnard.menu_2" parent="ragnard.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="ragnard.menu_1_list" parent="ragnard.menu_1"
+              action="ragnard.action_window"/>
+    <menuitem name="Server to list" id="ragnard" parent="ragnard.menu_2"
+              action="ragnard.action_server"/>
+-->
+  </data>
+</odoo>
