@@ -5,12 +5,12 @@ from odoo import models, fields
 
 class ragnard(models.Model):
      _name = 'ragnard.ragnard'
-     _description = ´'Esta clase almacena los usuarios ragnard.ragnard'
+     _description ='Esta clase almacena los usuarios ragnard.ragnard'
 
      Nombre = fields.Char()
      Cedula= fields.Integer()
      Años = fields.Float(compute="_value_pc", store=True)
-     memo = fields.Text()
+     memo = fields.Text()s
 #
 #     @api.depends('value')
 #     def _value_pc(self):
